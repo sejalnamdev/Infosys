@@ -47,8 +47,8 @@ class sol:
 
         return r1 and r2
 
-    def isSymmetric(self, root):
-        return self.symmetric(root.left, root.right)
+    #def isSymmetric(self, root):
+    #    return self.symmetric(root.left, root.right)
 
 
 a = list(map(int, input().split()))
@@ -56,8 +56,8 @@ root = buildtree(a)
 
 s = sol()
 
-print(s.isSymmetric(root))
-
+#print(s.isSymmetric(root))
+print(s.symmetric(root.left, root.right))
     
 
 
